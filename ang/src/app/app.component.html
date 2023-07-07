@@ -22,7 +22,7 @@
             [product]="product"
         ></app-product>
     </div>
-    <app-modal title="Create new Pruduct">
+    <app-modal *ngIf="modalService.isVisible$ | async" title="Create new Pruduct">
         <app-create-product></app-create-product>
     </app-modal>
 </div>

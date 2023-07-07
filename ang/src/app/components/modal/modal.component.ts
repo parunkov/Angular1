@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'app-modal',
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ModalComponent {
   @Input() title: string
-
+  constructor(public modalService: ModalService) {}
 }
